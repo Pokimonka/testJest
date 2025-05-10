@@ -20,9 +20,9 @@ const dataList = [
         price: 1000
     }], true, 500]
 ]
-const handler = test.each(dataList);
+// const handler = test.each(dataList);
 
-handler('test many books %s, %b', (data, discount, expected) => {
-    const result = calcTotal(data, discount)
+test.each(dataList)('many books %s, %b', (data, discount, expected) => {
+    const result = calcTotal(data, discount);
     expect(result).toBe(expected)
-})
+});
