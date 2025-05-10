@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "lint": "eslint --fix .",
-    "build": "babel test -d dist"
+    "build": "babel test -d dist",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +20,7 @@
     "eslint": "^9.26.0",
     "eslint-plugin-jest": "^28.11.0",
     "globals": "^16.1.0",
+    "husky": "^9.1.7",
     "jest": "^26.6.3",
     "jest-babel": "^1.0.1"
   },
